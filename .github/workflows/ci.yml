@@ -1,0 +1,16 @@
+
+name: USDT Event Tracker CI
+
+on:
+  push:
+    branches: [main, test]
+  pull_request:
+    branches: [test]
+
+jobs:
+  pipeline:
+    uses: Maniteja0126/ci-cd-system/.github/workflows/pipeline.yml@main
+    with:
+      config-path: 'config.yml'
+      environment: 'dev'
+    secrets: inherit

@@ -1,0 +1,21 @@
+project:
+  type: node
+  config:
+    buildScript: build
+    startScript: start
+    devScript: dev
+
+provider:
+  type: aws
+  config: {}
+
+environment: dev
+
+steps:
+  - lint
+  - build
+
+env:
+  NODE_ENV: development
+  DATABASE_URL: "postgresql://postgres:postgres@localhost:5432/postgres"
+  REDIS_URL: "redis://localhost:6379"
