@@ -12,5 +12,5 @@ jobs:
     uses: Maniteja0126/ci-cd-system/.github/workflows/pipeline.yml@main
     with:
       config-path: 'config.yml'
-      environment: 'dev'
-    secrets: inherit 
+      environment: 'DEV' 
+    secrets: inherit
