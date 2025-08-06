@@ -1,4 +1,3 @@
-# .github/workflows/ci.yml
 name: USDT Event Tracker CI
 
 on:
@@ -13,4 +12,6 @@ jobs:
     with:
       config-path: 'config.yml'
       environment: 'dev'
-    secrets: inherit  
+    secrets:
+      REDIS_URL: ${{ secrets.REDIS_URL }}
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
