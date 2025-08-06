@@ -14,3 +14,4 @@ jobs:
       environment: 'DEV'
     secrets:
       inherit: true
+
