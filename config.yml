@@ -15,6 +15,7 @@ environment: dev
 steps:
   - lint
   - build
+  - deploy
 
 env:
   REDIS_URL: ${REDIS_URL}
