@@ -2,7 +2,7 @@ name: USDT Event Tracker CI
 
 on:
   push:
-    branches: [main, develop, test]
+    branches: [main, test]
   pull_request:
     branches: [test]
 
