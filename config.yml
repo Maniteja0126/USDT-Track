@@ -8,7 +8,10 @@ project:
 
 provider:
   type: aws
-  config: {}
+  config:
+   dev:
+     cluster: my-ecs-cluster
+     service: my-ecs-service
 
 environment: dev
 
