@@ -1,3 +1,4 @@
+# config.yml
 project:
   type: node
   config:
@@ -14,3 +15,8 @@ environment: dev
 steps:
   - lint
   - build
+
+env:
+  REDIS_URL: ""  
+  DATABASE_URL: ""  
+  NODE_ENV: "production"
