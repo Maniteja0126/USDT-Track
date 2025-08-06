@@ -13,3 +13,4 @@ jobs:
       config-path: 'config.yml'
       environment: 'DEV'
     secrets: inherit
+
