@@ -1,8 +1,9 @@
+# .github/workflows/ci.yml
 name: USDT Event Tracker CI
 
 on:
   push:
-    branches: [main, test]
+    branches: [main, develop, test]
   pull_request:
     branches: [test]
 
@@ -12,4 +13,3 @@ jobs:
     with:
       config-path: 'config.yml'
       environment: 'dev'
-    secrets: inherit
