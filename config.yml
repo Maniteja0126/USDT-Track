@@ -14,8 +14,3 @@ environment: dev
 steps:
   - lint
   - build
-
-env:
-  NODE_ENV: development
-  DATABASE_URL: "postgresql://postgres:postgres@localhost:5432/postgres"
-  REDIS_URL: "rediss://default:AVcQAAIjcDE3MmJlNDRjNWU5MGY0NTMyODUwNTI3MzM3MjZkM2I3ZHAxMA@valid-gnu-22288.upstash.io:6379"
