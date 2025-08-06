@@ -17,6 +17,6 @@ steps:
   - build
 
 env:
-  REDIS_URL: ${{ secrets.REDIS_URL }}
-  DATABASE_URL: ${{ secrets.DATABASE_URL }} 
+  REDIS_URL: ""
+  DATABASE_URL: ""
   NODE_ENV: "production"
