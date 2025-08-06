@@ -13,5 +13,4 @@ jobs:
       config-path: 'config.yml'
       environment: 'DEV'
     secrets:
-      REDIS_URL: ${{ secrets.REDIS_URL }}
-      DATABASE_URL: ${{ secrets.DATABASE_URL }} 
+      inherit: true
