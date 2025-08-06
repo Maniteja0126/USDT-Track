@@ -1,3 +1,4 @@
+# .github/workflows/ci.yml
 name: USDT Event Tracker CI
 
 on:
@@ -11,6 +12,7 @@ jobs:
     uses: Maniteja0126/ci-cd-system/.github/workflows/pipeline.yml@main
     with:
       config-path: 'config.yml'
-      environment: 'DEV' 
-      REDIS_URL: ${{ secrets.DEV_REDIS_URL }}
+      environment: 'DEV'
+    secrets:
+      DEV_REDIS_URL: ${{ secrets.DEV_REDIS_URL }}
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
