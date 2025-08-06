@@ -6,11 +6,6 @@ on:
   pull_request:
     branches: [test]
 
-env:
-  REDIS_URL: ${{ secrets.REDIS_URL }}
-  DATABASE_URL: ${{ secrets.DATABASE_URL }}
-  NODE_ENV: ${{ secrets.NODE_ENV || 'production' }}
-
 jobs:
   pipeline:
     uses: Maniteja0126/ci-cd-system/.github/workflows/pipeline.yml@main
