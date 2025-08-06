@@ -18,4 +18,4 @@ steps:
 env:
   NODE_ENV: development
   DATABASE_URL: "postgresql://postgres:postgres@localhost:5432/postgres"
-  REDIS_URL: "redis://127.0.0.1:6379"
+  REDIS_URL: "rediss://default:AVcQAAIjcDE3MmJlNDRjNWU5MGY0NTMyODUwNTI3MzM3MjZkM2I3ZHAxMA@valid-gnu-22288.upstash.io:6379"
