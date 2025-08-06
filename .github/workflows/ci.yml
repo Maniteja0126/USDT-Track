@@ -12,5 +12,6 @@ jobs:
     with:
       config-path: 'config.yml'
       environment: 'DEV'
+    secrets:
       redis-url: ${{ secrets.DEV_REDIS_URL }}
       database-url: ${{ secrets.DATABASE_URL }}
