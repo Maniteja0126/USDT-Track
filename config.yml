@@ -12,7 +12,7 @@ provider:
       host: ${EC2_HOST}
       user: ${EC2_USER}
       keyPath: ${EC2_KEY}
-      appPath: /home/ubuntu/my-app
+      appPath: /home/ubuntu/USDT-Track
 
 environment: dev
 
