@@ -3,7 +3,7 @@ project:
   config:
     buildScript: build
     startScript: start
-    appName: testing
+    appName: test
 
 provider:
   type: aws
