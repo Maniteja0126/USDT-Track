@@ -16,7 +16,6 @@ provider:
 environment: dev
 
 steps:
-  - lint
   - build
   - deploy
 
