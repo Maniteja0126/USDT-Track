@@ -12,9 +12,4 @@ jobs:
     with:
       config-path: 'config.yml'
       environment: 'DEV'
-    secrets:
-      REDIS_URL: ${{ secrets.REDIS_URL }}
-      DATABASE_URL: ${{ secrets.DATABASE_URL }}
-      NODE_ENV: ${{ secrets.NODE_ENV }}
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    secrets: inherit
