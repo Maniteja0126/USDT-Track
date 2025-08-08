@@ -1,7 +1,7 @@
 import {createClient} from "redis";
 
 const redisClient = createClient({
-    url: "redis://localhost:6379",
+    url: process.env.REDIS_URL,
 });
 
 redisClient.connect();
@@ -19,3 +19,5 @@ redisClient.on("connect", () => {
 
 
 export default redisClient;
+
+
