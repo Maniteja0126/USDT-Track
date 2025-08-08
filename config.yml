@@ -32,7 +32,7 @@ project:
     appName: testing
 
 provider:
-  type: ec2
+  type: aws
   config:
     dev:
       host: ${EC2_HOST}
