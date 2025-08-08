@@ -1,17 +1,44 @@
-# config.yml
+# # config.yml
+# project:
+#   type: node
+#   config:
+#     buildScript: build
+#     startScript: start
+#     devScript: dev
+
+# provider:
+#   type: aws
+#   config:
+#    dev:
+#      cluster: my-ecs-cluster
+#      service: my-ecs-service
+
+# environment: dev
+
+# steps:
+#   - build
+#   - deploy
+
+# env:
+#   REDIS_URL: ${REDIS_URL}
+#   DATABASE_URL: ${DATABASE_URL}
+#   NODE_ENV: "production"
+
 project:
   type: node
   config:
     buildScript: build
     startScript: start
-    devScript: dev
+    appName: testing
 
 provider:
-  type: aws
+  type: ec2
   config:
-   dev:
-     cluster: my-ecs-cluster
-     service: my-ecs-service
+    dev:
+      host: ${EC2_HOST}
+      user: ${EC2_USER}
+      keyPath: ${EC2_KEY}
+      appPath: /home/ubuntu/my-app
 
 environment: dev
 
@@ -20,6 +47,6 @@ steps:
   - deploy
 
 env:
-  REDIS_URL: ${REDIS_URL}
   DATABASE_URL: ${DATABASE_URL}
-  NODE_ENV: "production"
+  REDIS_URL: ${REDIS_URL}
+  NODE_ENV: ${NODE_ENV}
