@@ -1,29 +1,3 @@
-# # config.yml
-# project:
-#   type: node
-#   config:
-#     buildScript: build
-#     startScript: start
-#     devScript: dev
-
-# provider:
-#   type: aws
-#   config:
-#    dev:
-#      cluster: my-ecs-cluster
-#      service: my-ecs-service
-
-# environment: dev
-
-# steps:
-#   - build
-#   - deploy
-
-# env:
-#   REDIS_URL: ${REDIS_URL}
-#   DATABASE_URL: ${DATABASE_URL}
-#   NODE_ENV: "production"
-
 project:
   type: node
   config:
