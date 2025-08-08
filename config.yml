@@ -16,7 +16,7 @@ provider:
 
 environment: dev
 
-steps:
+steps: 
   - build
   - deploy
 
